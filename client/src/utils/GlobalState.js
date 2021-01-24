@@ -13,7 +13,7 @@ const StoreProvider = ({ value = [], ...props }) => {
         currentCategory: '',
     });
     // use this to confirm it works!
-    console.log(state);
+    // console.log(state);
     // console.log(dispatch);
     return <Provider value={[state, dispatch]} {...props} />;
 };
