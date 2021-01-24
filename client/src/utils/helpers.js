@@ -5,7 +5,7 @@ export function pluralize(name, count) {
   return name + 's'
 };
 
-export function idbPromise(storeName, method, object) {
+export default function idbPromise(storeName, method, object) {
   return new Promise((resolve, reject) => {
     // open connection to the database `shop-shop` with the version of 1
     const request = window.indexedDB.open('shop-shop', 1);
